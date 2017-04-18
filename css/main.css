@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: kollektif;
-    src: url(./Font/Kollektif-Bold.ttf);
+    src: url(../Font/Kollektif-Bold.ttf);
 }
 /*-----------------*/
 .bold{
@@ -33,10 +33,11 @@
 .btn-large{
         padding: 12px 50px 12px 50px;
 }
-.cta-green{
-    background-color: #64d593;
-    border:#64d593;
-    font-size: 20px;
+
+.cta-blue{
+    background-color: #3e50a3;
+    border:#3e50a3;
+    font-size: 16px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
@@ -46,12 +47,12 @@
     color: #ffffff;
 }
 
-.cta-green:hover{
-  background-color: #49C36E;
+.cta-blue:hover{
+  background-color: #213284;
   color: #ffffff;
 }
 
-.cta-green:focus{
+.cta-blue:focus{
    color: #ffffff;
 }
 
@@ -185,7 +186,7 @@ body{
     font-size: 22px;
 }
 
-.photo-wall .cta-green{
+.photo-wall .cta-orange{
     position: relative;
     top: -345px;
     padding: 18px 60px 18px 60px;

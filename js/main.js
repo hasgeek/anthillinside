@@ -82,7 +82,7 @@ $(document).ready(function() {
           itemCollection: "721ddcca-2439-11e7-a658-855025fdda9d",
           paymentDesc: "Anthill Inside 2017"
         });
-      }, 5000);
+      }, 1000);
     },
     error: function(response) {
       var ajaxLoad = this;

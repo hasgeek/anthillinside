@@ -1,0 +1,400 @@
+
+@font-face {
+    font-family: kollektif;
+    src: url(./Font/Kollektif-Bold.ttf);
+}
+/*-----------------*/
+.bold{
+    font-weight: 700;
+}
+.no-padding{
+    padding: 0;
+}
+.base-font-color{
+   color: #3A3A47 ;
+}
+
+.base-font-style{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.bg-offwhite{
+    background-color: #FAFAFA;
+}
+
+.bg-blue{
+    background-color: #3E50A3;
+}
+.text-blue{
+    color: #3E50A3;
+}
+
+.btn-large{
+        padding: 12px 50px 12px 50px;
+}
+.cta-green{
+    background-color: #64d593;
+    border:#64d593;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: #ffffff;
+}
+
+.cta-green:hover{
+  background-color: #49C36E;
+  color: #ffffff;
+}
+
+.cta-green:focus{
+   color: #ffffff;
+}
+
+.cta-orange{
+    background-color: #e76f45;
+    border:#6BE1E5;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: #ffffff;
+}
+
+.cta-orange:hover{
+  background-color: #DE5D30;
+  color: #ffffff;
+}
+
+.cta-orange:focus{
+   color: #ffffff;
+}
+
+
+.cta-blue-inline{
+    background-color: #ffffff;
+    border:solid 2px #3e50a3;
+    color: #3A3A47;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2;
+}
+
+.cta-blue-inline:hover{
+  background-color: #3e50a3;
+  border:solid 2px #3e50a3;
+  color: #ffffff;
+}
+
+.cta-tertiary{
+
+}
+/*-------------------*/
+body{
+    background-image: url("../images/anthill-background-tile.png");
+    background-repeat: repeat;
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+  .affix {
+      top: -150px;
+      width: 100%;
+      z-index: 100;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+.navbar-default .navbar-nav>li>a {
+    color: #3A3A47;
+}
+.masthead{
+    margin-top: 200px;
+}
+
+.masthead>.col-md-12>h1{
+   font-family: kollektif;
+   font-weight: 700;
+   font-size: 52px;
+}
+
+.masthead>.col-md-12>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #7A7D81;
+    margin-bottom: 140px;
+}
+
+.anthill-navbar{
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+
+.anthill-navbar .navbar-nav>li>a {
+   font-size: 16px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+}
+
+
+.intro-section h3 {
+   font-family: kollektif;
+   font-weight: 700;
+   margin-top: 40px !important;
+   font-size: 18px;
+}
+
+.intro-section p {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.intro-section > .cta{
+    padding: 20px 40px 80px 40px;
+
+
+}
+
+.intro-section > .cta > p{
+    color: #ffffff;
+    margin-top: 26px;
+    font-size: 16px;
+}
+
+.intro-section > .cta > p > span{
+    padding-right: 10px;
+}
+
+.intro-section > button {
+    font-size: 22px;
+}
+
+.photo-wall .cta-green{
+    position: relative;
+    top: -345px;
+    padding: 18px 60px 18px 60px;
+
+}
+
+
+.speaker-card-img{
+     width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.speaker-card{
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 49px 2px rgba(212,210,212,1);
+    -moz-box-shadow: 5px 5px 49px 2px rgba(212,210,212,1);
+    box-shadow: 5px 5px 49px 2px rgba(212,210,212,1);
+    padding: 25px;
+    background-color: #ffffff;
+    height: 450px;
+}
+
+.workshop-card{
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 49px 2px rgba(212,210,212,1);
+    -moz-box-shadow: 5px 5px 49px 2px rgba(212,210,212,1);
+    box-shadow: 5px 5px 49px 2px rgba(212,210,212,1);
+    padding: 25px;
+    background-color: #ffffff;
+    height: 500px;
+}
+
+
+.past-workshops{
+    margin-top: 70px;
+}
+
+
+
+.link-to-all-speakers{
+    font-size: 18px;
+}
+
+.signup-banner .col-md-12{
+    margin-top: 20px;
+}
+
+.proposed-talks .col-md-10{
+    margin-top: 100px;
+}
+.proposed-talks h2{
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+.tickets{
+    margin-top: 100px;
+}
+.venue{
+    margin-top: 40px;
+}
+
+.venue h2{
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sponsorship{
+    margin-top: 100px;
+}
+
+.venue .col-md-4{
+    margin-bottom: 60px;
+}
+
+.logo-wall{
+    margin-top: 100px;
+}
+
+.logo-wall h3{
+font-weight: 700;
+margin-top: 10px;
+}
+
+.logo-wall img{
+    margin-top: 40px;
+}
+
+/*.become-a-sponsor{
+    border: dashed 1px grey;
+    margin-top: 10px;
+    padding: 16px 10px 18px 18px;
+}
+.become-a-sponsor:hover{
+    border: dashed 1px #3e50a3;
+}
+
+.become-a-sponsor a{
+    font-size: 14px;
+    color: #979797 !important;
+    text-decoration: none;
+}
+
+.become-a-sponsor a:hover{
+
+    color: #3e50a3 !important;
+}*/
+
+.dinner-banner .col-md-12{
+    margin-top: 100px;
+}
+
+
+.anthill-etymology{
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+
+.anthill-etymology h2{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.about-hasgeek{
+    margin-top: 100px;
+}
+
+.about-hasgeek img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.nav-list>li{
+    cursor: pointer;
+}
+#navbar-affix.affix {
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+    z-index: 1000;
+}
+
+#navbar-affix{
+    background-color: #fafafa !important;
+}
+
+.secondary-nav>li>a{
+    color: #3A3A47;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 40px 15px 30px;
+    border-bottom: solid 3px transparent;
+}
+
+.secondary-nav>li>a:hover{
+   background-color: #ffffff;
+   border-bottom: solid 3px #3e50a3;
+}
+.about-hasgeek{
+    margin-bottom: 100px;
+}
+
+.anthill-etymology>.col-md-4 {
+    margin-top: 20px;
+}
+
+.footer{
+    padding: 40px 0 40px 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead{
+    margin-top: 50px;
+}
+.masthead>.col-md-12>h2{
+    margin-bottom: 60px;
+}
+.cta-blue-inline{
+    font-size: 14px;
+}
+.base-font-style{
+    font-size: 14px;
+}
+.logo-wall h3{
+    font-size: 16px;
+}
+.speaker-card{
+    height: 500px;
+}
+.workshop-card{
+    height: 600px;
+}
+
+}
+
+
+/*map*/
+.leaflet-map { height: 400px; }
+
+
+
+
+
+
+
+

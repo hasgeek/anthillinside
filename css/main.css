@@ -98,9 +98,6 @@
   color: #ffffff;
 }
 
-.cta-tertiary{
-
-}
 /*-------------------*/
 body{
     background-image: url("../images/anthill-background-tile.png");
@@ -360,8 +357,9 @@ margin-top: 10px;
 }
 
 .footer{
-    padding: 40px 0 40px 0;
+    padding: 40px 0 60px 0;
 }
+
 
 @media only screen and (max-width: 500px) {
     .masthead{
@@ -380,14 +378,31 @@ margin-top: 10px;
     font-size: 16px;
 }
 .speaker-card{
-    height: 500px;
+    height: 520px;
 }
 .workshop-card{
-    height: 600px;
+    height: 620px;
+}
+.title-font-mobile{
+    font-size: 26px;
 }
 
 }
 
+@media only screen and (max-width: 320px) {
+
+.speaker-card{
+    height: 580px;
+}
+.workshop-card{
+    height: 740px;
+}
+
+}
+
+.fb_iframe_widget_fluid span {
+   width: 100% !important;
+}
 
 /*map*/
 .leaflet-map { height: 400px; }

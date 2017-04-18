@@ -53,17 +53,16 @@ function initLeaflets() {
   });
 }
 
+/*facebook share button*/
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
 $(document).ready(function() {
-
-  initLeaflets();
-
-  $(".anthill-navbar-links .nav-list a").click(function (e) {
-    // Prevent a page reload when a link is pressed
-    e.preventDefault();
-    // Call the scroll function
-    var goto = $(this).attr('data-href');
-    scrollTo(goto);
-  });
 
   var boxofficeUrl = "https://boxoffice.hasgeek.com";
 
@@ -77,11 +76,13 @@ $(document).ready(function() {
       var boxofficeScript = document.createElement('script');
       boxofficeScript.innerHTML = data.script;
       document.getElementsByTagName('body')[0].appendChild(boxofficeScript);
-      window.Boxoffice.init({
-        org: "hasgeek",
-        itemCollection: "721ddcca-2439-11e7-a658-855025fdda9d",
-        paymentDesc: "Anthill Inside 2017"
-      });
+      window.setTimeout(function() {
+        window.Boxoffice.init({
+          org: "hasgeek",
+          itemCollection: "721ddcca-2439-11e7-a658-855025fdda9d",
+          paymentDesc: "Anthill Inside 2017"
+        });
+      }, 5000);
     },
     error: function(response) {
       var ajaxLoad = this;
@@ -110,14 +111,15 @@ $(document).ready(function() {
     }
   });
 
-});
+  initLeaflets();
 
-/*facebook share button*/
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+  $(".anthill-navbar-links .nav-list a, .book-ticket-btn").click(function (e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    var goto = $(this).attr('data-href');
+    scrollTo(goto);
+  });
+
+});
 

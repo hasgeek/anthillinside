@@ -99,7 +99,7 @@ $(document).ready(function() {
             $('#boxoffice-widget p').html(errorMsg);
           }
           else {
-            errorMsg = "<p>Unable to connect. If you are behind a firewall or using any script blocking extension (like Privacy Badger).<p></p> Please ensure your browser can load boxoffice.hasgeek.com, api.razorpay.com and checkout.razorpay.com .</p>";
+            errorMsg = "<p>Unable to connect. If you are behind a firewall or using any script blocking extension (like Privacy Badger), please ensure your browser can load boxoffice.hasgeek.com, api.razorpay.com and checkout.razorpay.com .</p>";
             $('#boxoffice-widget p').html(errorMsg);
           }
         } else {

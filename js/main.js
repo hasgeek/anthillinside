@@ -53,20 +53,6 @@ function initLeaflets() {
   });
 }
 
-$(document).ready(function() {
-
-  initLeaflets();
-
-  $(".anthill-navbar-links .nav-list a").click(function (e) {
-    // Prevent a page reload when a link is pressed
-    e.preventDefault();
-    // Call the scroll function
-    var goto = $(this).attr('data-href');
-    scrollTo(goto);
-  });
-
-});
-
 /*facebook share button*/
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -75,4 +61,65 @@ $(document).ready(function() {
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+$(document).ready(function() {
+
+  var boxofficeUrl = "https://boxoffice.hasgeek.com";
+
+  $.get({
+    url: boxofficeUrl + "/api/1/boxoffice.js",
+    crossDomain: true,
+    timeout: 8000,
+    retries: 5,
+    retryInterval: 8000,
+    success: function(data) {
+      var boxofficeScript = document.createElement('script');
+      boxofficeScript.innerHTML = data.script;
+      document.getElementsByTagName('body')[0].appendChild(boxofficeScript);
+      window.setTimeout(function() {
+        window.Boxoffice.init({
+          org: "hasgeek",
+          itemCollection: "721ddcca-2439-11e7-a658-855025fdda9d",
+          paymentDesc: "Anthill Inside 2017"
+        });
+      }, 1000);
+    },
+    error: function(response) {
+      var ajaxLoad = this;
+      ajaxLoad.retries -= 1;
+      var errorMsg;
+      if (response.readyState === 4) {
+        errorMsg = "Server error, please try again later.";
+        $('#boxoffice-widget p').html(errorMsg);
+      }
+      else if (response.readyState === 0) {
+        if (ajaxLoad.retries < 0) {
+          if(!navigator.onLine) {
+            errorMsg = "Unable to connect. There is no network!";
+            $('#boxoffice-widget p').html(errorMsg);
+          }
+          else {
+            errorMsg = "<p>Unable to connect. If you are behind a firewall or using any script blocking extension (like Privacy Badger).<p></p> Please ensure your browser can load boxoffice.hasgeek.com, api.razorpay.com and checkout.razorpay.com .</p>";
+            $('#boxoffice-widget p').html(errorMsg);
+          }
+        } else {
+          setTimeout(function() {
+            $.get(ajaxLoad);
+          }, ajaxLoad.retryInterval);
+        }
+      }
+    }
+  });
+
+  initLeaflets();
+
+  $(".anthill-navbar-links .nav-list a, .book-ticket-btn").click(function (e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    var goto = $(this).attr('data-href');
+    scrollTo(goto);
+  });
+
+});
 

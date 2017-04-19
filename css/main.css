@@ -157,7 +157,7 @@ body{
    font-weight: 400;
 }
 
-.anthill-navbar-links {
+.anthill-navbar-list {
     text-align: center;
 }
 
@@ -435,9 +435,6 @@ margin-top: 10px;
 /*map*/
 .leaflet-map { height: 400px; }
 
-.anthill-mobile-nav-text{
-    font-size: 14px;
-}
 
 .anthill-mobile-navbar{
     background-color: #3e50a3;
@@ -457,8 +454,10 @@ margin-top: 10px;
     background-color: #213284 !important;
 }
 
+
 .anthill-mobile-nav-text{
     color: #ffffff !important;
+    font-size: 14px;
 }
 .anthill-mobile-icon-bar{
     background-color: #ffffff !important;
@@ -467,6 +466,12 @@ margin-top: 10px;
 .anthill-mobile-nav-list{
     color: #ffffff !important;
 }
+
+.ticket-section {
+  margin: 70px auto;
+}
+
+
 
 
 

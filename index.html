@@ -29,18 +29,21 @@
 <body class="base-font-color">
 <!-- masthead -->
 	<div class="container">
-		<div class="row masthead text-center">
-			<div class="col-md-12">
-				<img src="./images/anthill-inside-logo.svg" alt="Anthill Inside Logo" width="56">
-				<h1><span style="color: #213284">A</span>nthill <span style="color: #213284">I</span>nside 2017</h1>
-				<h2 class="title-font-mobile">A conference on deep learning and artificial intelligence</h2>
+		<div class="row masthead">
+			<div class="col-md-10 col-md-offset-1">
+				<img src="./images/anthill-inside-logo.svg" alt="Anthill Inside Logo" width="100" class="pull-left masthead-logo" style="margin-top:30px;">
+				<div class="masthead-title">
+                    <h1><span style="color: #213284">A</span>nthill</h1>
+                    <h1 style="margin-top: -10px;"><span style="color: #213284; margin-left: 14px;">I</span>nside 2017</h1>
+                    <h2 class="title-font-mobile">A conference on deep learning and artificial intelligence</h2>
+                </div>
 			</div>
 		</div>
 	</div><!-- /.container -->
 <!-- /.masthead -->
 
 <!-- second navbar starts here -->
-	<div id="navbar-affix" data-spy="affix" data-offset-top="524" class="hidden-xs hidden-sm" style="z-index: 1000;">
+	<div id="navbar-affix" data-spy="affix" data-offset-top="540" class="hidden-xs hidden-sm" style="z-index: 1000;">
 		<div class="container ">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
@@ -51,10 +54,10 @@
 				</button>
 			</div>
 
-			<div class="collapse navbar-collapse anthill-navbar-links">
+			<div class="collapse navbar-collapse anthill-navbar-links anthill-navbar-list">
 				<ul class="nav navbar-nav nav-list secondary-nav">
 					<li><a data-href="#announcement" >Announcement <span class="sr-only">(current)</span></a></li>
-					<li><a data-href="#past-highlight">Past highlight</a></li>
+					<li><a data-href="#past-highlight">Past highlights</a></li>
 					<li><a data-href="#proposals">Proposals</a></li>
 					<!-- <li><a data-href="#">Conference Schedule</a></li> -->
 					<li><a data-href="#tickets">Tickets</a></li>
@@ -68,39 +71,68 @@
  <!-- second navbar ends here -->
 
 <!-- anthill mobile navbar -->
-	<nav class="navbar navbar-default navbar-fixed-bottom hidden-lg">
+	<!-- <nav class="navbar navbar-default anthill-mobile-navbar navbar-fixed-bottom hidden-lg">
 		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle anthill-mobile-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="icon-bar anthill-mobile-icon-bar"></span>
+				<span class="icon-bar anthill-mobile-icon-bar"></span>
+				<span class="icon-bar anthill-mobile-icon-bar"></span>
 				</button>
+<<<<<<< HEAD
+				<a class="navbar-brand anthill-mobile-nav-text" href="#proposals">Propose a Talk</a>
+				<a class="navbar-brand anthill-mobile-nav-text" href="#tickets">Book Tickets</a>
+=======
 				<a class="navbar-brand" href="#proposals">Propose a Talk</a>
 				<a class="navbar-brand" href="#tickets">Book Tickets</a>
+>>>>>>> a14fa1b622515425c4831adac40e1add15082708
 			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse anthill-navbar-links" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav nav-list">
-					<li><a data-href="#announcement">Announcement</a></li>
-					<li><a data-href="#past-highlight">Past highlight</a></li>
-					<!--  <li><a data-href="#proposals">Proposals</a></li> -->
-					<li><a data-href="#venue">Venue</a></li>
-					<li><a data-href="#sponsors">Sponsors</a></li>
-					<li><a data-href="#about-hasgeek">About HasGeek</a></li>
+					<li><a data-href="#announcement" class="anthill-mobile-nav-list">Announcement</a></li>
+					<li><a data-href="#past-highlight" class="anthill-mobile-nav-list">Past highlight</a></li>
+					<li><a data-href="#venue" class="anthill-mobile-nav-list">Venue</a></li>
+					<li><a data-href="#sponsors" class="anthill-mobile-nav-list">Sponsors</a></li>
+					<li><a data-href="#about-hasgeek" class="anthill-mobile-nav-list">About HasGeek</a></li>
 				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
+			</div>
+		</div>
+	</nav> -->
+
+    <nav class="navbar navbar-default navbar-fixed-bottom hidden-lg anthill-mobile-navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed anthill-mobile-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar anthill-mobile-icon-bar"></span>
+                <span class="icon-bar anthill-mobile-icon-bar"></span>
+                <span class="icon-bar anthill-mobile-icon-bar"></span>
+                </button>
+                <a class="navbar-brand anthill-mobile-nav-text" href="#proposals">Propose a talk</a>
+                <a class="navbar-brand anthill-mobile-nav-text" href="#tickets">Book Tickets</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse anthill-navbar-links" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-list">
+                    <li><a data-href="#announcement" class="anthill-mobile-nav-list">Announcement</a></li>
+                    <li><a data-href="#past-highlight" class="anthill-mobile-nav-list">Past highlights</a></li>
+                    <!--  <li><a data-href="#proposals">Proposals</a></li> -->
+                    <li><a data-href="#venue" class="anthill-mobile-nav-list">Venue</a></li>
+                    <li><a data-href="#sponsors" class="anthill-mobile-nav-list">Sponsors</a></li>
+                    <li><a data-href="#about-hasgeek" class="anthill-mobile-nav-list">About HasGeek</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 <!-- /.ANTHILL MOBILE NAVBAR -->
 
 	<div class="container-fluid">
 		<!-- Anthill Intro Section -->
 		<div class="row bg-offwhite intro-section" id="announcement">
 			<div class="col-md-3 col-md-offset-1">
-				<h3>What is Anthill Inside </h3>
+				<h3>What is Anthill Inside? </h3>
 				<p class="base-font-style">In 2016, The Fifth Elephant branched into a separate conference on Deep Learning. Anthill Inside is the new avataar of the Deep Learning conference. Anthill Inside attempts to bridge the gap bringing theoretical advances closer to functioning reality.</p>
 			</div>
 			<div class="col-md-4">
@@ -174,7 +206,7 @@
 							</div>
 							<div class="" style="text-align: center;">
 								<h4>Vijay Gabale</h4>
-								<p class="text-blue bold">Co-founder and CTO of Infilect</em></p>
+								<p class="text-blue bold">Co-founder and CTO of Infilect<</p>
 								<p class="text-left">Vijay Gabale walked us through the components of building a chat bot for conversational search: intent extraction, dialogue generation, meaningful search, and assistance based conversation, and the relevant Deep Learning techniques, displaying a functioning example.</p>
 								<a href="https://hasgeek.tv/fifthelephant/deep-learning-conf-2016/1217-vijay-gabale-deep-dive-into-building-chat-bots-using-deep-learning" target="_blank" class="btn cta-blue">Watch Talk</a>
 							</div>
@@ -243,7 +275,7 @@
 <!-- /.Give a proposal section here ^ -->
 
 		<div class="row ticket-section" id="tickets">
-		  <h2 class="text-center title-font-mobile">Tickets</h2>
+		      <h2 class="text-center title-font-mobile">Tickets</h2>
 			<div class="col-md-10 col-md-offset-1">
 					<div id="boxoffice-widget"><p class="text-center regular col-sm-8 col-sm-offset-2 col-xs-12">Loading...</p></div>
 
@@ -255,7 +287,7 @@
 			<div class="col-md-10 col-md-offset-1">
 				<h2 class="text-center title-font-mobile">Venue</h2>
 			</div>
-			<div class="col-md-12 text-center">
+			<div class="col-md-10 col-md-offset-1 text-center">
 				<div class="border-one leaflet-map" id="toner" data-label="MLR Convention Center, Whitefield">
 				</div>
 			</div>
@@ -284,31 +316,34 @@
 		</div>
 	</div> -->
 <!--  <div class="row dinner-banner text-center">
-						<div class="col-md-12 hidden-xs hidden-sm">
-								<img src="./images/drinks&dinner-banner@2x.png" alt="" class="img-responsive" style="margin: 0 auto;">
-						</div>
-						<div class="col-md-12 visible-xs visible-sm">
-								<img src="./images/dinner-banner-alt.png" alt="" class="img-responsive" style="margin: 0 auto;">
-						</div>
-				</div> -->
-				<!-- <div class="row anthill-etymology bg-offwhite">
-						<div class="col-md-10 col-md-offset-1 text-center">
-								<h2>Why is this event called Anthill Inside?</h2>
-						</div>
-						<div class="col-md-5 col-md-offset-1">
-								<img src="./images/terry-pratchett@2x.png" alt="" class="img-responsive">
-						</div>
-						<div class="col-md-4 base-font-style">
-								<p>Sed vitae scelerisque nisl, vel tristique nunc. Mauris nec metus feugiat, accumsan nulla vel, tempor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum blandit suscipit enim non consequat.Sed vitae scelerisque nisl, vel tristique nunc. Mauris nec metus feugiat, accumsan nulla vel, tempor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum blandit suscipit enim non consequat.</p>
-						</div>
-				</div> -->
+			<div class="col-md-12 hidden-xs hidden-sm">
+				<img src="./images/drinks&dinner-banner@2x.png" alt="" class="img-responsive" style="margin: 0 auto;">
+			</div>
+			<div class="col-md-12 visible-xs visible-sm">
+				<img src="./images/dinner-banner-alt.png" alt="" class="img-responsive" style="margin: 0 auto;">
+			</div>
+		</div> -->
+		<div class="row anthill-etymology bg-offwhite">
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <h2>Why is this event called Anthill Inside?</h2>
+      </div>
+      <div class="col-md-4 col-md-offset-4 text-center">
+        <img src="./images/deep-learning-img-1.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-4 col-md-offset-2 base-font-style">
+        <p class="text-justify">How does cognition emerge from inanimate matter? Douglas Hofstadter, explored this in Gödel, Escher, Bach: An Eternal Golden Braid, where he compared the human brain to a colony of ants. Individual entities - neurons or ants - he argued, can coordinate to result in interesting _emergent_ behaviour; cognition in the case of neurons or an anthill in the case of an ant colony.</p>
+      </div>
+      <div class="col-md-4 base-font-style">
+        <p class="text-justify">Terry Pratchett built on this analogy in his Discworld novels, in which a colony of ants coordinate to make Hex, a fictional self-building computer! Hex also features a sticker that reads 'Anthill Inside', an obvious play on Intel's famous slogan. HasGeek, in turn, borrowed 'Anthill Inside' to help people working on deep learning and artificial intelligence, interact and collaborate with each other to produce something <em>bigger</em>.</p>
+      </div>
+    </div>
 
 	<!-- About hasgeek here -->
 	<div class="row about-hasgeek" id="about-hasgeek">
-		<div class="col-md-10 col-md-offset-1 text-center">
-			<img src="./images/hasgeek-logo.png" alt="">
+		<div class="col-md-2 col-md-offset-2">
+			<img src="./images/hasgeek-logo.png" alt="" class="img-responsive">
 		</div>
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-6">
 			<p class="base-font-style">HasGeek helps people in technology meet each other, collaborate on new opportunities and advance the state of the art. We organize conferences, hacknights, workshops and geekups, and provide tools for communities to self-organize.</p>
 			<p class="base-font-style">We’ve created conferences around the themes of devops, front end engineering, Julia, big data and cloud computing, JavaScript and Android. Our Job Board is used by thousands of geeks every month to find new opportunities.</p>
 			<p class="base-font-style">HasGeek is a technology company in the media business, bringing software automation to a traditionally people-intensive operation. Over the past six years, HasGeek has organized dozens of conferences attended by thousands of technology professionals, made several thousand connections, and built open source tools that are now used by many communities.</p><br>
@@ -333,29 +368,30 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
 
-<style type="text/css">        
-  #boxoffice-widget .boxoffice-button-action {        
-    background-color: #E05F26;     
-    border-color:  #B94C1D;  
+<style type="text/css">
+  #boxoffice-widget .boxoffice-button-action {
+    background-color: #E05F26;
+    border-color:  #B94C1D;
     color: #fff;
-  }       
-  #boxoffice-widget .boxoffice-button-info {        
-    background-color: #5BC0DE;     
+  }
+  #boxoffice-widget .boxoffice-button-info {
+    background-color: #5BC0DE;
     border-color: #2A9CBE;
-    color: #fff;   
-  }       
-  #boxoffice-widget .payment-stages-bg {        
-    background-color: #3E50A3; 
-  }       
-  #boxoffice-widget .progress-indicator>li {        
-    color: #fff;     
+    color: #fff;
+  }
+  #boxoffice-widget .payment-stages-bg {
+    background-color: #3E50A3;
+  }
+  #boxoffice-widget .progress-indicator>li {
+    color: #fff;
   }
   #boxoffice-widget .progress-indicator>li.active {
 		color: #fff;
-  }      
-  #boxoffice-widget .category-heading:after {       
-    border-color: #ccc #fff #ccc #ccc; 
-  }   
+  }
+  #boxoffice-widget .category-heading:after {
+    border-color: #ccc #fff #ccc #ccc;
+  }
+
 </style>
 
 </body>

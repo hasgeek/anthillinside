@@ -67,7 +67,7 @@ $(document).ready(function() {
   var boxofficeUrl = "https://boxoffice.hasgeek.com";
 
   $.get({
-    url: boxofficeUrl + "/api/1/boxoffice.js",   
+    url: boxofficeUrl + "/api/1/boxoffice.js",
     crossDomain: true,
     timeout: 8000,
     retries: 5,

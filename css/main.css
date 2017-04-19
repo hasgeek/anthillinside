@@ -1,16 +1,9 @@
 
 @font-face {
     font-family: kollektif;
-    src: url(../font/Kollektif-Bold.ttf);
+    src: url(../fonts/Kollektif-Bold.ttf);
 }
 
-@font-face {
-    font-family: kollektif-regular;
-    src: url(../font/Kollektif.ttf);
-}
-.kollektif-regular{
-    font-family:'kollektif-regular';
-}
 /*-----------------*/
 .bold{
     font-weight: 700;
@@ -25,6 +18,9 @@
 .base-font-style{
     font-size: 16px;
     line-height: 1.5em;
+}
+.font-white{
+    color: #ffffff !important;
 }
 
 .bg-offwhite{
@@ -146,7 +142,7 @@ body{
     font-weight: 300;
     font-size: 24px;
     color: #7A7D81;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .anthill-navbar{
@@ -161,6 +157,15 @@ body{
    font-weight: 400;
 }
 
+.anthill-navbar-links {
+    text-align: center;
+}
+
+.anthill-navbar-links .navbar-nav {
+    float: none;
+    margin: 0 auto -5px;
+    display: inline-block;
+}
 
 .intro-section h3 {
    font-family: kollektif;
@@ -315,8 +320,8 @@ margin-top: 10px;
 
 
 .anthill-etymology{
-    margin-top: 70px;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .anthill-etymology h2{
@@ -329,7 +334,6 @@ margin-top: 10px;
 }
 
 .about-hasgeek img{
-    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -352,7 +356,7 @@ margin-top: 10px;
     color: #3A3A47;
     font-size: 16px;
     font-weight: 700;
-    padding: 15px 40px 15px 30px;
+    /*padding: 15px 40px 15px 30px;*/
     border-bottom: solid 3px transparent;
 }
 
@@ -372,7 +376,12 @@ margin-top: 10px;
     padding: 40px 0 60px 0;
 }
 
-
+.anthill-mobile-nav{
+    background-color: #3e50a3;
+}
+.anthill-mobile-nav>.navbar-brand{
+    background-color: #ffffff;
+}
 @media only screen and (max-width: 500px) {
     .masthead{
     margin-top: 50px;
@@ -381,10 +390,11 @@ margin-top: 10px;
     margin-bottom: 20px;
 }
 .masthead-title h1{
-   font-size: 40px;
+   font-size: 38px;
 }
 .masthead-logo{
-    width: 78px !important;
+    width: 74px !important;
+    margin-top:-5px !important;
 }
 .cta-blue-inline{
     font-size: 14px;
@@ -425,7 +435,38 @@ margin-top: 10px;
 /*map*/
 .leaflet-map { height: 400px; }
 
+.anthill-mobile-nav-text{
+    font-size: 14px;
+}
 
+.anthill-mobile-navbar{
+    background-color: #3e50a3;
+}
+
+.anthill-mobile-toggle{
+    border: none !important;
+}
+
+.anthill-mobile-toggle:hover{
+    border: none !important;
+    background-color: #213284 !important;
+}
+
+.anthill-mobile-toggle:focus{
+    border: none !important;
+    background-color: #213284 !important;
+}
+
+.anthill-mobile-nav-text{
+    color: #ffffff !important;
+}
+.anthill-mobile-icon-bar{
+    background-color: #ffffff !important;
+}
+
+.anthill-mobile-nav-list{
+    color: #ffffff !important;
+}
 
 
 

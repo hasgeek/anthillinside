@@ -1,7 +1,15 @@
 
 @font-face {
     font-family: kollektif;
-    src: url(../Font/Kollektif-Bold.ttf);
+    src: url(../font/Kollektif-Bold.ttf);
+}
+
+@font-face {
+    font-family: kollektif-regular;
+    src: url(../font/Kollektif.ttf);
+}
+.kollektif-regular{
+    font-family:'kollektif-regular';
 }
 /*-----------------*/
 .bold{
@@ -120,21 +128,25 @@ body{
     color: #3A3A47;
 }
 .masthead{
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
-.masthead>.col-md-12>h1{
-   font-family: kollektif;
+.masthead>img{
+    margin-top: -40px;
+}
+
+.masthead-title>h1{
+    font-family: kollektif;
    font-weight: 700;
-   font-size: 52px;
+   font-size: 60px;
 }
 
-.masthead>.col-md-12>h2{
+.masthead-title>h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: #7A7D81;
-    margin-bottom: 140px;
+    margin-bottom: 200px;
 }
 
 .anthill-navbar{
@@ -365,8 +377,14 @@ margin-top: 10px;
     .masthead{
     margin-top: 50px;
 }
-.masthead>.col-md-12>h2{
-    margin-bottom: 60px;
+.masthead-title h2{
+    margin-bottom: 20px;
+}
+.masthead-title h1{
+   font-size: 40px;
+}
+.masthead-logo{
+    width: 78px !important;
 }
 .cta-blue-inline{
     font-size: 14px;

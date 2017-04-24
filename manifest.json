@@ -1,0 +1,16 @@
+{
+  "name": "Anthill Inside",
+  "short_name": "Anthill Inside",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#3E50A3",
+  "background_color": "#FAFAFA",
+  "icons": [
+    {
+      "src": "images/anthillinside-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
+  

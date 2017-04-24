@@ -10,6 +10,7 @@
 	<meta name="keywords" content="Conference, Workshop, Data Science, Analytics, Machine Learning, NLP, Big Data, Deep Learning">
 	<meta name="author" content="HasGeek and friends">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
 	<meta property="og:title" content="Anthill Inside – India’s leading conference on Deep Learning and Artificial Intelligence">
 	<meta property="og:image" content="https://images.hasgeek.com/embed/file/854827f5c8ef40698c754280fbf66fe1">
 	<meta property="og:url" content="https://anthillinside.in/2017">
@@ -22,13 +23,20 @@
 	<meta name="twitter:image" content="https://images.hasgeek.com/embed/file/854827f5c8ef40698c754280fbf66fe1">
 	<link rel="shortcut icon" type="image/x-icon" href="https://hasgeek.com/favicon.ico">
 	<link rel="icon" type="image/x-icon" href="https://hasgeek.com/favicon.ico">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-	<!-- map -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/leaflet.css" />
+	<link rel="manifest" href="manifest.json">
+	<!-- Add to home screen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Anthill Inside PWA">
+	<link rel="apple-touch-icon" href="images/icons/anthillinside-icon-152.png">
+	<!-- Tile Icon for Windows -->
+	<meta name="msapplication-TileImage" content="images/icons/anthillinside-icon-144.png">
+ 	<meta name="msapplication-TileColor" content="#FAFAFA">
 </head>
 <body class="base-font-color">
 <!-- masthead -->
@@ -369,10 +377,10 @@
 	</div>
 </div><!-- /.container-fluid -->
 
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="/js/leaflet.js"></script>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
 
 <script>
   // Google Analytics
@@ -419,6 +427,15 @@
     padding-left: 20px;
   }
 </style>
+
+<!-- Register service worker -->
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function() {
+    console.log("Service Worker Registered"); 
+  });
+}
+</script>
 
 </body>
 </html>

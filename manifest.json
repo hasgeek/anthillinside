@@ -2,7 +2,7 @@
   "name": "Anthill Inside",
   "short_name": "Anthill Conf",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "/2017",
   "theme_color": "#3E50A3",
   "background_color": "#FAFAFA",
   "icons": [

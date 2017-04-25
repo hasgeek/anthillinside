@@ -7,7 +7,7 @@ gulp.task('generate-service-worker', function(callback) {
   var rootDir = '.';
 
   swPrecache.write(path.join(rootDir, 'sw.js'), {
-    staticFileGlobs: [rootDir + '/{.,css,fonts,images,js}/*.{js,html,css,png,jpg,gif,svg,ttf}'],
+    staticFileGlobs: [rootDir + '/{css,fonts,images,js,2017}/*.{js,html,css,png,jpg,gif,svg,ttf}'],
     runtimeCaching: [{
       urlPattern: /^http:\/\/boxoffice\.hasgeek\.com/,
       handler: 'networkOnly'

@@ -1,6 +1,6 @@
 {
   "name": "Anthill Inside",
-  "short_name": "Anthill Inside",
+  "short_name": "Anthill Conf",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#3E50A3",
@@ -13,4 +13,3 @@
     }
   ]
 }
-  

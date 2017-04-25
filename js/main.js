@@ -1,3 +1,5 @@
+const applicationServerPublicKey = 'BBX6gfVd47butnuSM1toVkPkA60lqA9UlASMZIIMu0AMYaiKs_RYwgWpanY8Kfxd01VCkE0OoJQQEnnEMl3j7H0';
+
 /*set offset for sticky navbar*/
 function scrollTo (goto) {
   var offset_top = $(goto).offset().top - 150;

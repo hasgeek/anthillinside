@@ -11,6 +11,7 @@
 	<meta name="author" content="HasGeek and friends">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	<meta name="theme-color" content="#3E50A3">
 	<meta property="og:title" content="Anthill Inside – India’s leading conference on Deep Learning and Artificial Intelligence">
 	<meta property="og:image" content="https://images.hasgeek.com/embed/file/854827f5c8ef40698c754280fbf66fe1">
 	<meta property="og:url" content="https://anthillinside.in/2017">
@@ -28,7 +29,7 @@
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/leaflet.css" />
-	<link rel="manifest" href="manifest.json">
+	<link rel="manifest" href="/manifest.json">
 	<!-- Add to home screen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -430,11 +431,10 @@
 
 <!-- Register service worker -->
 <script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function() {
-    console.log("Service Worker Registered"); 
-  });
-}
+	if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('/sw.js').then(function(swRegistration) {
+	  });
+	}
 </script>
 
 </body>

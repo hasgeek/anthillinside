@@ -119,6 +119,18 @@ $(document).ready(function() {
     // Call the scroll function
     var goto = $(this).attr('data-href');
     scrollTo(goto);
+    var eventAction = "View " + $(this).html();
+    mixpanel.track(eventAction);
+  });
+
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.userChoice.then(function(choiceResult) {
+      if (typeof ga !== "undefined") {
+        var eventAction = "Add to homescreen " + choiceResult.outcome
+        ga('send', { hitType: 'event', eventCategory: 'Add to homescreen', eventAction: choiceResult.outcome, eventLabel: 'A2H'});
+        mixpanel.track(eventAction);
+      }
+    });
   });
 
 });

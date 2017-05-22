@@ -2,9 +2,10 @@
   "name": "Anthill Inside",
   "short_name": "Anthill Conf",
   "display": "standalone",
-  "start_url": "/2017",
+  "start_url": "/2017?utm_source=homescreen",
   "theme_color": "#3E50A3",
   "background_color": "#FAFAFA",
+  "description": "Anthill Inside conference by HasGeek",
   "icons": [
     {
       "src": "images/anthillinside-icon-192.png",

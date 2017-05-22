@@ -20,6 +20,9 @@ gulp.task('generate-service-worker', function(callback) {
       urlPattern: /^https:\/\/[A-Za-z]+.tile.openstreetmap.org/,
       handler: 'cacheFirst'
     }],
+    importScripts: [
+      'https://cdn.izooto.com/scripts/workers/fdfd890ac1da81b351a263beea45ae373f16c4ec.js'
+    ],
     stripPrefix: rootDir
   }, callback);
 });

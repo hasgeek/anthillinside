@@ -119,8 +119,14 @@ $(document).ready(function() {
     // Call the scroll function
     var goto = $(this).attr('data-href');
     scrollTo(goto);
-    var eventAction = "View " + $(this).html();
-    mixpanel.track(eventAction);
+  });
+
+  $('a, .btn').click(function(event) {
+    var eventAction = $(this).html();
+    if (typeof ga !== "undefined") {
+      ga('send', { hitType: 'event', eventCategory: 'Click', eventAction: eventAction, eventLabel: 'click'});
+      mixpanel.track(eventAction);
+    }
   });
 
   window.addEventListener('beforeinstallprompt', function (e) {

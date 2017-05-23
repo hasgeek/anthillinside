@@ -184,6 +184,18 @@ body{
     padding: 20px 40px 80px 40px;
 }
 
+@media(min-width: 992px) {
+    .intro-section > .cta{
+        padding-bottom: 221px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .intro-section > .cta{
+        padding-bottom: 175px;
+    }
+}
+
 .intro-section > .cta > p{
     color: #ffffff;
     margin-top: 26px;
@@ -474,11 +486,3 @@ margin-top: 10px;
 .nav-wrapper {
   height:53px;
 }
-
-
-
-
-
-
-
-

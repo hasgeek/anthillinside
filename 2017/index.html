@@ -161,10 +161,12 @@
 			</div>
 			<div class="col-md-4">
 				<h3>What can I expect?</h3>
-				<p class="base-font-style">Anthill Inside is a single day conference followed by workshops on the second day. The conference will have full, crisp and lightning talks from morning to evening. The workshops on the next day will introduce participants to neural networks followed by two tracks of three-hour workshops on NLP and Computer Vision / AI.
-				<button class="btn cta-blue" onclick="window._izq.push(['triggerPrompt']);">Sign up to be notified </button>
-				</p>
-			</div>
+				<p class="base-font-style">Anthill Inside is a single day conference followed by workshops on the second day. The conference will have full, crisp and lightning talks from morning to evening. The workshops on the next day will introduce participants to neural networks followed by two tracks of three-hour workshops on NLP and Computer Vision / AI.</p>
+				<div>
+				    <p>To receive updates and information about tickets, speakers, schedule and more</p>
+					<button class="btn btn-primary" id="subscribe" onclick="window._izq.push(['triggerPrompt']);">Subscribe</button>
+					<button class="btn btn-primary hide" id="unsubscribe" onclick="window._izq.push(['updateSubscription','unsubscribe']);">Unsubscribe</button>
+				</div>
 			<div class="col-md-4 bg-blue cta">
 				<p><span><img src="/images/location-icon.png" alt="" height="22px"></span>  MLR Convention Center, Whitefield,</p>
 				<p><span><img src="/images/date-icon.png" alt="" height="22px"></span>  29th July 2017</p>
@@ -446,10 +448,34 @@
 <!-- Register service worker -->
 <script>
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/sw.js').then(function(swRegistration) {
-	  }).catch(function() {
-	    console.log('Service worker registration failed');
+
+		navigator.serviceWorker.register('/sw.js').then(function () {
+			// console.log('Service worker registered');
+	  	}).catch(function() {
+	  	// console.log('Service worker registration failed');
 	  });
+
+    window._izq.push(["register_callback", function (obj) {
+      if(obj.statuscode == 1) {
+        $("#subscribe").hide();
+        $("#unsubscribe").show().removeClass('hide');
+      }
+      if(obj.statuscode == 7) {
+        $("#unsubscribe").hide();
+        $("#subscribe").removeClass('hide').show();
+      }
+    }]);
+
+    navigator.serviceWorker.ready.then(function (serviceWorkerRegistration) {
+    	serviceWorkerRegistration.pushManager.getSubscription().then(function (pushSubscription) {
+        if (pushSubscription) {
+          $("#subscribe").hide();
+          $("#unsubscribe").show().removeClass('hide');
+          return;
+        }
+	    });
+    });
+
 	}
 </script>
 

@@ -168,6 +168,18 @@
 					<p><button class="btn btn-primary hide" id="update-subscribe" onclick="window._izq.push(['updateSubscription','subscribe']);">Subscribe</button></p>
 					<p><button class="btn btn-primary hide" id="unsubscribe" onclick="window._izq.push(['updateSubscription','unsubscribe']);">Unsubscribe</button></p>
 				</div>
+				<div class="modal fade" id="subscription-confirmation" tabindex="-1" role="dialog" aria-labelledby="subscription-confirmation">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <h4>Thank you for subscribing to Anthill Inside push notifications!</h4>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-primary center-block" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-md-4 bg-blue cta">
 				<p><span><img src="/images/location-icon.png" alt="" height="22px"></span>  MLR Convention Center, Whitefield,</p>
@@ -463,6 +475,7 @@
         $("#new-subscribe").hide();
         $("#update-subscribe").hide();
         $("#unsubscribe").show().removeClass('hide');
+        $("#subscription-confirmation").modal('show');
       }
       if(obj.statuscode == 7) {
       	$("#new-subscribe").hide();

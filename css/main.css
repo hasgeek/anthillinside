@@ -486,3 +486,7 @@ margin-top: 10px;
 .nav-wrapper {
   height:53px;
 }
+
+.iz-https-branding {
+  display: none !important;
+}

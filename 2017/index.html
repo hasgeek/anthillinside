@@ -164,7 +164,8 @@
 				<p class="base-font-style">Anthill Inside is a single day conference followed by workshops on the second day. The conference will have full, crisp and lightning talks from morning to evening. The workshops on the next day will introduce participants to neural networks followed by two tracks of three-hour workshops on NLP and Computer Vision / AI.</p>
 				<div>
 				  <p>To receive updates and information about tickets, speakers, schedule and more</p>
-					<p><button class="btn btn-primary" id="subscribe" onclick="window._izq.push(['triggerPrompt']);">Subscribe</button></p>
+					<p><button class="btn btn-primary" id="new-subscribe" onclick="window._izq.push(['triggerPrompt']);">Subscribe</button></p>
+					<p><button class="btn btn-primary hide" id="update-subscribe" onclick="window._izq.push(['updateSubscription','subscribe']);">Subscribe</button></p>
 					<p><button class="btn btn-primary hide" id="unsubscribe" onclick="window._izq.push(['updateSubscription','unsubscribe']);">Unsubscribe</button></p>
 				</div>
 			</div>
@@ -457,20 +458,25 @@
 	  });
 
     window._izq.push(["register_callback", function (obj) {
+    	console.log(obj);
       if(obj.statuscode == 1) {
-        $("#subscribe").hide();
+        $("#new-subscribe").hide();
+        $("#update-subscribe").hide();
         $("#unsubscribe").show().removeClass('hide');
       }
       if(obj.statuscode == 7) {
+      	$("#new-subscribe").hide();
         $("#unsubscribe").hide();
-        $("#subscribe").removeClass('hide').show();
+        $("#update-subscribe").removeClass('hide').show();
       }
     }]);
 
     navigator.serviceWorker.ready.then(function (serviceWorkerRegistration) {
     	serviceWorkerRegistration.pushManager.getSubscription().then(function (pushSubscription) {
+    		console.log(pushSubscription);
         if (pushSubscription) {
-          $("#subscribe").hide();
+          $("#new-subscribe").hide();
+          $("#update-subscribe").hide();
           $("#unsubscribe").show().removeClass('hide');
           return;
         }

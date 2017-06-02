@@ -1,4 +1,4 @@
-
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 @font-face {
     font-family: kollektif;
     src: url(../fonts/Kollektif-Bold.ttf);
@@ -288,6 +288,18 @@ body{
     margin-bottom: 60px;
 }
 
+.sponsor-logo-wall h3{
+    margin-bottom: 20px;
+}
+
+.sponsorship-deck-btn{
+    margin-bottom: 80px;
+    margin-top: -40px;
+}
+.sponsor-category{
+    margin-top: 20px;
+}
+
 .venue .col-md-4{
     margin-bottom: 60px;
 }
@@ -490,3 +502,9 @@ margin-top: 10px;
 .iz-https-branding {
   display: none !important;
 }
+
+.bg-bronze{
+    background-color: #cd7f32;
+}
+
+

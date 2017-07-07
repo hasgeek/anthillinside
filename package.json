@@ -30,5 +30,8 @@
   "devDependencies": {
     "path": "^0.12.7",
     "sw-precache": "^5.1.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
